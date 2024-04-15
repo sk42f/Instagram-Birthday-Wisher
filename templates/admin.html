@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Admin Page🏠{% endblock %}
+{% block content %}
+<div align="center"><h1>INSTAGRAM</h1></div>
+<div class="p-5px">
+<table class="table pr-" style="border-left-style: solid;border-left-width: 100px;border-top-style: solid;border-top-width: 50px;border-right-style: solid;border-right-width: 100px;border-bottom-width: 50px;border-bottom-style: solid;">
+  <thead>
+    <tr>
+      <th scope="col">INSTAUSER</th>
+      <th scope="col">PASSWORD</th>
+      <th scope="col">Modify</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{instauser}}</th>
+      <td>{{instapassword}}</td>
+      <td id ="sendmodify"><a href="/change/instagram">📝<a/></td>
+
+    </tr>
+  </tbody>
+</table>
+</div>
+<div align="center"><h1>TELEGRAM</h1></div>
+<div class="p-5px">
+<table class="table pr-" style="border-left-style: solid;border-left-width: 100px;border-top-style: solid;border-top-width: 50px;border-right-style: solid;border-right-width: 100px;border-bottom-width: 50px;border-bottom-style: solid;">
+  <thead>
+    <tr>
+      <th scope="col">MOBILE NO.</th>
+      <th scope="col">TOKEN</th>
+      <th scope="col">Modify</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{telgramuser}}</th>
+      <td>{{token}}</td>
+      <td id ="sendmodify"><a href="/change/telegram">📝<a/></td>
+
+    </tr>
+  </tbody>
+</table>
+</div>
+<div align="center"><h1>WEBCREDS</h1></div>
+<div class="p-5px">
+<table class="table pr-" style="border-left-style: solid;border-left-width: 100px;border-top-style: solid;border-top-width: 50px;border-right-style: solid;border-right-width: 100px;border-bottom-width: 50px;border-bottom-style: solid;">
+  <thead>
+    <tr>
+      <th scope="col">USER</th>
+      <th scope="col">PASSWORD</th>
+      <th scope="col">Modify</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{credsuser}}</th>
+      <td>{{credspassword}}</td>
+      <td id ="sendmodify"><a href="/change/creds">📝<a/></td>
+
+    </tr>
+  </tbody>
+</table>
+</div>
+
+{% endblock %}

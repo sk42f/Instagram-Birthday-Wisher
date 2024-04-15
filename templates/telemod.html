@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}MODIFY TELEGRAM{% endblock %}
+{% block content %}
+<div align="center">
+	<h1>Modify TELEGRAM</h1>
+</div>
+<div class="p-5px" style="border-top-style: solid;border-top-width: 50px;border-bottom-style: solid;border-bottom-width: 50px;border-left-style: solid;border-left-width: 100px;border-right-style: solid;border-right-width: 100px;">
+
+<form method="POST">
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label" style="padding-left: 10px;">New Mobile No</label>
+  <input type="Name" class="form-control" id="exampleFormControlInput1" placeholder="Name" name="telgramuser" value={{userid}} >
+  
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label" style="padding-left: 10px;">New Token</label>
+  <input type="password" class="form-control" id="exampleFormControlInput1" name="token">
+  
+</div>
+  <button type="submit" class="btn btn-success">MODIFY</button>
+</div>
+</form>
+</div>
+{% endblock %}

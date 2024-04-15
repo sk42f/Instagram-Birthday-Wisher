@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}ADD NEW ENTRY{% endblock %}
+
+{% block content %}
+<div align="center">
+	<h1>ADD NEW ENTRY📝</h1>
+</div>
+<div class="p-5px" style="border-top-style: solid;border-top-width: 50px;border-bottom-style: solid;border-bottom-width: 50px;border-left-style: solid;border-left-width: 100px;border-right-style: solid;border-right-width: 100px;">
+
+<form method="POST">
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label" style="padding-left: 10px;">User Name</label>
+  <input type="Name" class="form-control" id="exampleFormControlInput1" placeholder="Instagram Username" name="USER">
+
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label" style="padding-left: 10px;" >Name</label>
+  <input type="Name" class="form-control" id="exampleFormControlInput1" placeholder="Name" name="NAME">
+  
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label" style="padding-left: 10px;">DATE OF BIRTH</label>
+  <input type="Date" class="form-control" id="exampleFormControlInput1" placeholder="DATE OF BIRTH" name="DOB">
+  
+</div>
+<div class="mb-3">
+   <label for="exampleFormControlTextarea1" class="form-label" style="padding-left: 10px;">Message</label>
+  <input type="name" class="form-control" id="exampleFormControlTextarea1" rows="3" name="MESSAGE">
+</div>
+<div class="mb-3">
+  <button type="submit" class="btn btn-success">ADD</button>
+</div>
+</form>
+</div>
+
+
+{% endblock %}
+
+

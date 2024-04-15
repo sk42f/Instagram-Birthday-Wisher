@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Home Page🏠{% endblock %}
+{% block content %}
+<div class="p-5px">
+<table class="table pr-" style="border-left-style: solid;border-left-width: 100px;border-top-style: solid;border-top-width: 50px;border-right-style: solid;border-right-width: 100px;border-bottom-width: 50px;border-bottom-style: solid;">
+  <thead>
+    <tr>
+      <th scope="col">Username</th>
+      <th scope="col">Name</th>
+      <th scope="col">Date of Birth</th>
+      <th scope="col">Message</th>
+      <th scope="col" >Delete</th>
+      <th scope="col">Modify</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+    <tr>
+      <th scope="row">{{row[0]}}</th>
+      <td>{{row[1]}}</td>
+      <td>{{row[2]}}</td>
+      <td>{{row[3]}}</td>
+      <td id ="senddelete" data={{row[0]}}><a href="/delete/{{row[0]}}">🗑️<a/></td>
+      <td id ="sendmodify" data={{row[0]}}><a href="/modify/{{row[0]}}">📝<a/></td>
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+
+{% endblock %}
+  
